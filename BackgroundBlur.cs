@@ -1,6 +1,10 @@
-﻿using StorybrewCommon.Scripting;
-using StorybrewCommon.Storyboarding;
+﻿// by thunderbird2678
+// you can contact me on twitter @thunderbird2678 or on discord (thunderbird#2678)
+// feel free to use any or all parts of this storyboard code however you wish
+
 using System.Linq;
+using StorybrewCommon.Scripting;
+using StorybrewCommon.Storyboarding;
 
 namespace StorybrewScripts
 {
@@ -45,9 +49,6 @@ namespace StorybrewScripts
             bg.Fade(54660, 54821, 0.5, Opacity);
             bg.Fade(59660, 59983, 0.75, 0.85);
             bg.Fade(62563, 64499, 0.85, 0);
-            // bg.Fade(26758, 27080, Opacity, 0);
-            // bg.Fade(28854, 29016, 0, Opacity);
-            // bg.Fade(62241, 62563, Opacity, 0);
         }
     }
 }

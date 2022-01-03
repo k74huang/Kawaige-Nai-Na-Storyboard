@@ -1,9 +1,13 @@
-﻿using OpenTK;
+﻿// slightly modified from the original by thunderbird2678
+// you can contact me on twitter @thunderbird2678 or on discord (thunderbird#2678)
+// feel free to use any or all parts of this storyboard code however you wish
+
+using System;
+using System.Linq;
+using OpenTK;
 using StorybrewCommon.Animations;
 using StorybrewCommon.Scripting;
 using StorybrewCommon.Storyboarding;
-using System;
-using System.Linq;
 
 namespace StorybrewScripts
 {
@@ -94,10 +98,14 @@ namespace StorybrewScripts
                 var bar = layer.CreateSprite(SpritePath, SpriteOrigin, new Vector2(Position.X + i * barWidth, Position.Y));
                 bar.CommandSplitThreshold = 300;
 
-                var percentage = ((1.0)*(i+1))/BarCount;
+                // the percentage of how far along the spectrum this bar is
+                var percentage = ((1.0) * (i + 1)) / BarCount;
 
-                bar.ColorHsb(StartTime, 25 + (30*percentage), 0.75, 1);
+                // generate a light gradient in the yellows across the entire spectrum
+                bar.ColorHsb(StartTime, 25 + (30 * percentage), 0.75, 1);
                 bar.Additive(StartTime, EndTime);
+
+                // have the spectrum fade in/out
                 bar.Fade(1274, 3855, 0, 1);
                 bar.Fade(62563, 64499, 1, 0);
 

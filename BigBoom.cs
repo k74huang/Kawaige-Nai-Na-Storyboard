@@ -3,6 +3,9 @@
 // you can contact me on twitter @thunderbird2678 or on discord (thunderbird#2678)
 // feel free to use any or all parts of this storyboard code however you wish
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using OpenTK;
 using OpenTK.Graphics;
 using StorybrewCommon.Mapset;
@@ -11,18 +14,11 @@ using StorybrewCommon.Storyboarding;
 using StorybrewCommon.Storyboarding.Util;
 using StorybrewCommon.Subtitles;
 using StorybrewCommon.Util;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace StorybrewScripts
 {
     public class BigBoom : StoryboardObjectGenerator
     {
-        [Configurable]
-        // An integer containing the timestamp at which the effect should trigger
-        public int Time = 0;
-
         [Configurable]
         // An integer containing the duration (in ms) after which the sprite fades out
         public int FadeDuration = 400;
@@ -42,14 +38,19 @@ namespace StorybrewScripts
         {
             var hitobjectLayer = GetLayer("");
 
-            int[] times = new int[]{2565, 14177, 16758, 19338, 21919, 24500, 25790, 27080, 29661, 29984, 30306, 34822, 35145, 35467, 44499, 44821, 45144, 47079, 48370, 64499};
+            // an array of all the timestamps at which the effect should trigger
+            int[] times = new int[] { 2565, 14177, 16758, 19338, 21919, 24500, 25790, 27080, 29661, 29984, 30306, 34822, 35145, 35467, 44499, 44821, 45144, 47079, 48370, 64499 };
+            // a counter variable for the timestamp array
             var timeCounter = 0;
 
             // iterate through all hitobjects
             foreach (var hitobject in Beatmap.HitObjects)
             {
 
-                var hSprite = hitobjectLayer.CreateSprite(SpritePath, OsbOrigin.Centre, hitobject.Position); 
+                // initialize the sprite variable with the assumption of it being a hitcircle object
+                var hSprite = hitobjectLayer.CreateSprite(SpritePath, OsbOrigin.Centre, hitobject.Position);
+
+                // use a boolean flag to determine whether we generate the effect on this hitobject or not
                 var gen = false;
 
                 // if the object's a slider
@@ -60,28 +61,39 @@ namespace StorybrewScripts
                     {
                         // generate the sprite based on where the sliderball is at that point in time
                         hSprite = hitobjectLayer.CreateSprite(SpritePath, OsbOrigin.Centre, hitobject.PositionAtTime(Time));
+                        // flip the flag
                         gen = true;
                     }
 
                 }
+                // otherwise
                 else
                 {
                     // generate the effect if the hitcircle lands right on the timestamp
                     if (Math.Abs(hitobject.StartTime - times[timeCounter]) < 5)
                     {
+                        // flip the flag
                         gen = true;
                     }
                 }
 
-                if(gen)
+                // if we are to generate the effect
+                if (gen)
                 {
-                    Log(times[timeCounter]);
+                    // // log the timestamp for debug purposes
+                    // Log(times[timeCounter]);
+
+                    // scale it outwards, duration here is hardcoded lmao but can be made configurable in the future if needed
                     hSprite.Scale(Easing, times[timeCounter], times[timeCounter] + 250, SpriteScale, SpriteScale * 4.5);
+                    // we do a bit of fade
                     hSprite.Fade(times[timeCounter], times[timeCounter] + FadeDuration, 0.75, 0);
                     hSprite.Additive(times[timeCounter], times[timeCounter] + FadeDuration);
+                    // use light orange as the color (this can also be made configurable in the future)
                     hSprite.Color(times[timeCounter], new Color4(255, 232, 150, 255));
+                    // increment the timecounter
                     timeCounter++;
-                    if(timeCounter == times.Length)
+                    // we can exit the loop if we've incremented the timecounter to the end of the list
+                    if (timeCounter == times.Length)
                     {
                         break;
                     }
