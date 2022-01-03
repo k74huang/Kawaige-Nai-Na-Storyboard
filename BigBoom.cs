@@ -60,7 +60,7 @@ namespace StorybrewScripts
                     if (hitobject.StartTime <= times[timeCounter] + 5 && hitobject.EndTime >= times[timeCounter] - 5)
                     {
                         // generate the sprite based on where the sliderball is at that point in time
-                        hSprite = hitobjectLayer.CreateSprite(SpritePath, OsbOrigin.Centre, hitobject.PositionAtTime(Time));
+                        hSprite = hitobjectLayer.CreateSprite(SpritePath, OsbOrigin.Centre, hitobject.PositionAtTime(times[timeCounter]));
                         // flip the flag
                         gen = true;
                     }
