@@ -27,6 +27,6 @@ Config:
 Layers:
   0532e42aaa024bbb8e0172631a31cb68:
     Name: ""
-    OsbLayer: Background
-    DiffSpecific: No
+    OsbLayer: Foreground
+    DiffSpecific: Yes
     Visible: Yes
