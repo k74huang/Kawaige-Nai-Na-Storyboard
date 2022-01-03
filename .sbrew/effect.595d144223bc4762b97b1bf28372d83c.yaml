@@ -1,0 +1,102 @@
+﻿FormatVersion: 7
+Name: "Spectrum 1"
+Script: "Spectrum"
+Config:
+  StartTime:
+    Type: "System.Int32"
+    Value: "1274"
+  EndTime:
+    Type: "System.Int32"
+    Value: "64499"
+  Position:
+    Type: "OpenTK.Vector2"
+    Value: "65,380"
+  Width:
+    Type: "System.Single"
+    Value: "500"
+  BeatDivisor:
+    Type: "System.Int32"
+    Value: "8"
+  BarCount:
+    Type: "System.Int32"
+    Value: "48"
+  SpritePath:
+    Type: "System.String"
+    Value: "sb/bar.png"
+  SpriteOrigin:
+    Type: "System.Int32"
+    Value: "6"
+    AllowedValues:
+      TopLeft: "0"
+      TopCentre: "1"
+      TopRight: "2"
+      CentreLeft: "3"
+      Centre: "4"
+      CentreRight: "5"
+      BottomLeft: "6"
+      BottomCentre: "7"
+      BottomRight: "8"
+  Scale:
+    Type: "OpenTK.Vector2"
+    Value: "1,35"
+  LogScale:
+    Type: "System.Int32"
+    Value: "600"
+  Tolerance:
+    Type: "System.Double"
+    Value: "0.2"
+  CommandDecimals:
+    Type: "System.Int32"
+    Value: "1"
+  MinimalHeight:
+    Type: "System.Single"
+    Value: "0.05"
+  FftEasing:
+    Type: "System.Int32"
+    Value: "18"
+    AllowedValues:
+      None: "0"
+      Out: "1"
+      In: "2"
+      InQuad: "3"
+      OutQuad: "4"
+      InOutQuad: "5"
+      InCubic: "6"
+      OutCubic: "7"
+      InOutCubic: "8"
+      InQuart: "9"
+      OutQuart: "10"
+      InOutQuart: "11"
+      InQuint: "12"
+      OutQuint: "13"
+      InOutQuint: "14"
+      InSine: "15"
+      OutSine: "16"
+      InOutSine: "17"
+      InExpo: "18"
+      OutExpo: "19"
+      InOutExpo: "20"
+      InCirc: "21"
+      OutCirc: "22"
+      InOutCirc: "23"
+      InElastic: "24"
+      OutElastic: "25"
+      OutElasticHalf: "26"
+      OutElasticQuarter: "27"
+      InOutElastic: "28"
+      InBack: "29"
+      OutBack: "30"
+      InOutBack: "31"
+      InBounce: "32"
+      OutBounce: "33"
+      InOutBounce: "34"
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random seed"
+Layers:
+  adf1b14f2eb947f29c89d2adad6aecd6:
+    Name: "Spectrum"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes

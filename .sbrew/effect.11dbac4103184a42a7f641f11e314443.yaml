@@ -1,0 +1,32 @@
+﻿FormatVersion: 7
+Name: "HitObjectHighlight 4"
+Script: "HitObjectHighlight"
+Config:
+  StartTime:
+    Type: "System.Int32"
+    Value: "24338"
+  EndTime:
+    Type: "System.Int32"
+    Value: "27080"
+  BeatDivisor:
+    Type: "System.Int32"
+    Value: "16"
+  FadeDuration:
+    Type: "System.Int32"
+    Value: "750"
+  SpritePath:
+    Type: "System.String"
+    Value: "sb/particle.png"
+  SpriteScale:
+    Type: "System.Double"
+    Value: "2.5"
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random seed"
+Layers:
+  0532e42aaa024bbb8e0172631a31cb68:
+    Name: ""
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
