@@ -2,9 +2,6 @@
 Name: "SmallBoom 1"
 Script: "SmallBoom"
 Config:
-  Time:
-    Type: "System.Int32"
-    Value: "0"
   FadeDuration:
     Type: "System.Int32"
     Value: "750"
