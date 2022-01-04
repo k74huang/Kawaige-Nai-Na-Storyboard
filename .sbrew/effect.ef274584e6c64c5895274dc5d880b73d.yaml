@@ -4,7 +4,7 @@ Script: "Background"
 Config:
   BackgroundPath:
     Type: "System.String"
-    Value: "sb/bg.jpg"
+    Value: ""
   RandomSeed:
     Type: "System.Int32"
     Value: "0"
