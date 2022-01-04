@@ -53,6 +53,10 @@ namespace StorybrewScripts
             // a counter variable for the timestamp array
             var timeCounter = 0;
 
+            // HAHAHAHAHA HORRIBLE HACK DON'T MIND ME LOL
+            var offset = 3;
+            times = times.Select(x => x + offset).ToArray();
+
             // iterate through all hitobjects
             foreach (var hitobject in Beatmap.HitObjects)
             {

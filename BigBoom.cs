@@ -42,6 +42,8 @@ namespace StorybrewScripts
             int[] times = new int[] { 2565, 14177, 16758, 19338, 21919, 24500, 25790, 27080, 29661, 29984, 30306, 34822, 35145, 35467, 44499, 44821, 45144, 47079, 48370, 64499 };
             // a counter variable for the timestamp array
             var timeCounter = 0;
+            var offset = 3;
+            times = times.Select(x => x + offset).ToArray();
 
             // iterate through all hitobjects
             foreach (var hitobject in Beatmap.HitObjects)
