@@ -28,5 +28,5 @@ If you actually want to use one of these scripts and can't figure out what somet
 
 - Original song by [**YUKA NAGASE**](https://www.youtube.com/watch?v=7ohkS_4hQf8), from **RIOT MUSIC**
 - `bar.png`, `boom.png`, `glow.png`, `particle.png` by **myself**
-- `bg.jpg` by [**ronoh**](https://twitter.com/rrnyrmy/status/1451870583939993603), `bg blur.jpg` is my edit of the original with a gaussian blur tossed on
+- original background by [**ronoh**](https://twitter.com/rrnyrmy/status/1451870583939993603), `bg blur.jpg` is my edit of the original with a gaussian blur tossed on
 - Lyrics use the Sanafon Yu font by **Sana**, which can be found [here](http://sana.s12.xrea.com/2_sanafonyu.html)
