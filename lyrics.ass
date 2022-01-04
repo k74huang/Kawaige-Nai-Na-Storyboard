@@ -9,8 +9,7 @@ YCbCr Matrix: None
 
 [Aegisub Project Garbage]
 Audio File: ../../../../Desktop/かわいげないな - 長瀬有花  (Original).mp3
-Scroll Position: 57
-Active Line: 16
+Active Line: 28
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -45,7 +44,7 @@ Dialogue: 0,0:00:17.66,0:00:18.95,Default,,0,0,0,,そうな
 Dialogue: 0,0:00:18.06,0:00:18.95,Default,,0,0,0,,ふり
 Dialogue: 0,0:00:18.37,0:00:18.95,Default,,0,0,0,,を
 Dialogue: 0,0:00:18.58,0:00:18.95,Default,,0,0,0,,して*
-Dialogue: 0,0:00:19.03,0:00:23.05,Default,,0,0,0,,わたし
+Dialogue: 0,0:00:19.34,0:00:23.05,Default,,0,0,0,,わたし
 Dialogue: 0,0:00:19.81,0:00:23.05,Default,,0,0,0,,の
 Dialogue: 0,0:00:20.00,0:00:23.05,Default,,0,0,0,,罪悪感
 Dialogue: 0,0:00:20.86,0:00:23.05,Default,,0,0,0,,を

@@ -60,6 +60,13 @@ namespace StorybrewScripts
                 var hSprite = hitobjectLayer.CreateSprite(SpritePath, OsbOrigin.Centre, hitobject.Position);
                 var gen = false;
 
+                // since some diffs don't have all the objects
+                // if our hit object skips an object in the timestamp array, we increment the counter for the timestamp array
+                if (hitobject.StartTime > times[timeCounter])
+                {
+                    timeCounter++;
+                };
+
                 // if the object's a slider
                 if (hitobject is OsuSlider)
                 {
