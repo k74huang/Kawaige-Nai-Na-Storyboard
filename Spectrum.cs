@@ -102,12 +102,12 @@ namespace StorybrewScripts
                 var percentage = ((1.0) * (i + 1)) / BarCount;
 
                 // generate a light gradient in the yellows across the entire spectrum
-                bar.ColorHsb(StartTime, 25 + (30 * percentage), 0.75, 1);
+                bar.ColorHsb(StartTime, 25 + (30 * percentage), 0.75, 0.5);
                 bar.Additive(StartTime, EndTime);
 
                 // have the spectrum fade in/out
-                bar.Fade(1274, 3855, 0, 1);
-                bar.Fade(62563, 64499, 1, 0);
+                bar.Fade(1274, 3855, 0, 0.5);
+                bar.Fade(62563, 64499, 0.5, 0);
 
                 var scaleX = Scale.X * barWidth / bitmap.Width;
                 scaleX = (float)Math.Floor(scaleX * 10) / 10.0f;

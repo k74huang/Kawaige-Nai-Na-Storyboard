@@ -7,7 +7,7 @@ Config:
     Value: "62563"
   EndTime:
     Type: "System.Int32"
-    Value: "64337"
+    Value: "64502"
   BeatDivisor:
     Type: "System.Int32"
     Value: "16"
