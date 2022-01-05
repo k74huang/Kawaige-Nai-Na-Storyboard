@@ -19,7 +19,7 @@ Config:
     Value: "8"
   BarCount:
     Type: "System.Int32"
-    Value: "48"
+    Value: "24"
   SpritePath:
     Type: "System.String"
     Value: "sb/bar.png"
@@ -41,10 +41,10 @@ Config:
     Value: "1,35"
   LogScale:
     Type: "System.Int32"
-    Value: "600"
+    Value: "500"
   Tolerance:
     Type: "System.Double"
-    Value: "0.2"
+    Value: "0.02"
   CommandDecimals:
     Type: "System.Int32"
     Value: "1"
