@@ -42,7 +42,7 @@ namespace StorybrewScripts
             times = times.Concat(new int[] { 30790, 31274, 31435, 31596, 32080, 32564, 32725, 32887, 33532, 34016 }).ToArray();
             times = times.Concat(new int[] { 34338, 34500, 34661, 35951, 36435, 36596, 36758, 37242, 37725, 37887, 38048, 38693, 38854, 39016, 39177 }).ToArray();
             times = times.Concat(new int[] { 44015, 44176, 44338, 45789, 46434, 46757, 46918, 47079 }).ToArray();
-            times = times.Concat(new int[] { 49015, 49257, 49499 }).ToArray();
+            times = times.Concat(new int[] { 49015, 49230, 49445 }).ToArray();
             times = times.Concat(new int[] { 49660, 49983, 50305, 50789, 51273, 51596, 51918 }).ToArray();
             times = times.Concat(new int[] { 52241, 52563, 52886, 53370, 53854, 54176, 54499 }).ToArray();
             times = times.Concat(new int[] { 54821, 55144, 55467, 55950, 56434, 56757, 57079 }).ToArray();
