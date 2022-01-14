@@ -6,6 +6,12 @@ Download the map [here!](https://osu.ppy.sh/beatmapsets/1664905#osu/3398802)
 
 ---
 
+### Youtube Preview
+
+[![Youtube Preview](https://i.imgur.com/IKEkOV5.png)](https://www.youtube.com/watch?v=cX1rgMAfIQ0 "Youtube Preview")
+
+---
+
 ### Brief Description
 
 - Some background dimming effects
